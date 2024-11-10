@@ -74,7 +74,7 @@ namespace Terraria.ModLoader.Core
         public string eacPath = "";
         // This .tmod was built against a beta release, preventing publishing.
         public bool beta = false;
-        public Version buildVersion = new Version("2022.9.47.44");
+        public Version buildVersion = new Version("2024.9.3.0");
         public string homepage = "";
         public string description = "";
         public ModSide side;

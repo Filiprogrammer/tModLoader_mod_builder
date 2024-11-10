@@ -225,7 +225,7 @@ namespace Terraria.ModLoader.Core
             using (var writer = new BinaryWriter(fileStream))
             {
                 writer.Write(Encoding.ASCII.GetBytes("TMOD"));
-                writer.Write("2022.9.47.44");
+                writer.Write("2024.9.3.0");
 
                 int hashPos = (int)fileStream.Position;
                 writer.Write(new byte[20 + 256 + 4]); //hash, sig, data length

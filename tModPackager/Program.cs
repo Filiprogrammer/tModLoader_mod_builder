@@ -70,7 +70,7 @@ namespace tModPackager
             BuildProperties buildProperties = BuildProperties.ReadBuildFile(modDir);
             string modName = Path.GetFileName(modDir);
             TmodFile tmodfile = new TmodFile(tmodPath, modName, buildProperties.version);
-            tmodfile.AddFile(modName + ".dll", File.ReadAllBytes(modDir + Path.DirectorySeparatorChar + "obj" + Path.DirectorySeparatorChar + "Debug" + Path.DirectorySeparatorChar + "net6.0" + Path.DirectorySeparatorChar + modName + ".dll"));
+            tmodfile.AddFile(modName + ".dll", File.ReadAllBytes(modDir + Path.DirectorySeparatorChar + "obj" + Path.DirectorySeparatorChar + "Debug" + Path.DirectorySeparatorChar + "net8.0" + Path.DirectorySeparatorChar + modName + ".dll"));
             tmodfile.AddFile("Info", buildProperties.ToBytes());
 
             List<string> resources = Directory.GetFiles(modDir, "*", SearchOption.AllDirectories).Where(res => !IgnoreResource(modDir, buildProperties, res)).ToList();
