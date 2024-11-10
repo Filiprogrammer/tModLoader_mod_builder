@@ -6,11 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-/*using Terraria.Localization;
-using Terraria.ModLoader.IO;
-using Terraria.ModLoader.UI;*/
 
-namespace Terraria.ModLoader.Core
+namespace tModPackager
 {
     // warning class is not threadsafe
     public class TmodFile : IEnumerable<TmodFile.FileEntry>

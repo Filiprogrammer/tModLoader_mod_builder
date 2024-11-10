@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Terraria.ModLoader.Core
+namespace tModPackager
 {
     public enum ModSide
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Terraria.ModLoader.Core
+namespace tModPackager
 {
     internal sealed class EntryReadStream : Stream
     {
